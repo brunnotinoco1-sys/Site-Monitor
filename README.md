@@ -24,6 +24,3 @@ Digite o endereço do site. Para analisar tentativas vistas pelo servidor, selec
 
 No Windows, execute `build.bat`. O script instala PyInstaller e cria `dist\WS Monitor.exe`.
 
-## Limites importantes
-
-Sem acesso a logs do servidor, o aplicativo só consegue observar respostas HTTP públicas e cabeçalhos; não consegue identificar tentativas de ataque que não sejam visíveis externamente. As detecções em logs são heurísticas, inclusive a classificação de força bruta e picos de tráfego. O aplicativo não bloqueia requisições, não substitui WAF/IDS e não garante detectar todos os ataques. Use-o somente em sites e logs que você tem autorização para monitorar.
